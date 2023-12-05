@@ -1,9 +1,8 @@
 # Aty-TTS
 Official Pytorch Implementation of "[Improving fairness for spoken language understanding in atypical speech with Text-to-Speech](https://openreview.net/pdf?id=YU228ZUCOU)"
 
-Note that we will release the dataset (HeyJay) after checking the copyrights.
-
-We provide all the source code and pre-trained models in this repo, so you can use the inference stage to generate atypical speech!
+🔥Note that we will release the dataset (HeyJay) after checking the copyrights.
+Instead, we provide all the source code and pre-trained models in this repo, so you can use the inference stage to generate atypical speech!
 
 <img src="img\img.png">
 
