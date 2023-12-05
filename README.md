@@ -4,7 +4,7 @@ Official Pytorch Implementation of "[Improving fairness for spoken language unde
 🔥Note that we will release the dataset (HeyJay) after checking the copyrights.
 Instead, we provide all the source code and pre-trained models in this repo, so you can use the inference stage to generate atypical speech!
 
-<img src="img\img.png" width="500">
+<img src="img\img.png" width="350">
 
 ## Abstract
 Spoken language understanding (SLU) systems often exhibit suboptimal performance in processing atypical speech, typically caused by neurological conditions and motor impairments. Recent advancements in Text-to-Speech (TTS) synthesis-based augmentation for more fair SLU have struggled to accurately capture the unique vocal characteristics of atypical speakers, largely due to insufficient data. To address this issue, we present a novel data augmentation method for atypical speakers by finetuning a TTS model, called Aty-TTS. Aty-TTS models speaker and atypical characteristics via knowledge transferring from a voice conversion model. Then, we use the augmented data to train SLU models adapted to atypical speech. To train these data augmentation models and evaluate the resulting SLU systems, we have collected a new atypical speech dataset containing intent annotation. Both objective and subjective assessments validate that Aty-TTS is capable of generating high-quality atypical speech. Furthermore, it serves as an effective data augmentation strategy, contributing to more fair SLU systems that can better accommodate individuals with atypical speech patterns.
