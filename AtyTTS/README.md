@@ -1,4 +1,4 @@
-# Grad-TTS-aty
+# Aty-TTS
 
 ## Installation
 
