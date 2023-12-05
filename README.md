@@ -87,5 +87,6 @@ If you find the code useful for your research, please consider citing:
 
 This repo is inspired by:
 
-[Grad-TTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS)
-[DiffVC](https://github.com/huawei-noah/Speech-Backbones/tree/main/DiffVC)
+1. [Grad-TTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS)
+
+2. [DiffVC](https://github.com/huawei-noah/Speech-Backbones/tree/main/DiffVC)
