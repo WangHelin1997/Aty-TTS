@@ -3,7 +3,7 @@ Official Pytorch Implementation of "[Improving fairness for spoken language unde
 
 Note that we will release the dataset (HeyJay) after checking the copyrights.
 
-We provide all the code and pre-trained model in this repo, you can use the inference stage to generate atypical speech!
+We provide all the source code and pre-trained models in this repo, so you can use the inference stage to generate atypical speech!
 
 <img src="img\img.png">
 
@@ -26,18 +26,37 @@ cd AtyTTS/model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 **Note**: code is tested on Python==3.6.9.
 
+## Data Preparation
+
+Please download the data and pre-trained models from [Models](https://drive.google.com/drive/home), and then put them to the corresponding folders.
+
+
 ## Inference
 
 ```
-python inference.py -f <TEXTFILE_PATH> -c <TTSMODEL_PATH> -o <OUTPUT_PATH> -v <VOCODER_PATH>
+python AtyTTS/inference.py -f <TEXTFILE_PATH> -c <TTSMODEL_PATH> -o <OUTPUT_PATH> -v <VOCODER_PATH>
 ```
 
+An example of ```<TEXTFILE_PATH>``` can be found at ```AtyTTS/resources/text-to-syn.txt```.
 
 
 ## Training
 
+You may need to change the paths to your own.
+
 ```
-python train_aug.py -spk=<SPEAKER>
+# Stage 1: Train the vocoder.
+python AtyTTS/hifi-gan/train_aty.py
+```
+
+```
+# Stage 2: Train the DuTa-VC model.
+python DuTaVC/train_dec.py
+```
+
+```
+# Stage 3: Train the Aty-TTS model.
+python AtyTTS/train_aug.py --spk=<SPEAKER>
 ```
 
 
