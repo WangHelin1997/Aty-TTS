@@ -27,7 +27,7 @@ cd AtyTTS/model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 ## Data Preparation
 
-Please download the data and pre-trained models from [Models](https://drive.google.com/drive/home), and then put them to the corresponding folders.
+Please download the data and pre-trained models from [Models](https://drive.google.com/drive/folders/16BUltExQHsUIMKq6R7fAvVAElxLbO1xh?usp=drive_link), and then put them to the corresponding folders.
 
 
 ## Inference
